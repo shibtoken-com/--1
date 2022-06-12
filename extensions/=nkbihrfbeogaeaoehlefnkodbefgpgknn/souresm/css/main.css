@@ -1,0 +1,485 @@
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+body {
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+ 
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+article > * + * {
+  margin-top: 1em;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@font-face {
+  font-family: "Euclid";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/EuclidCircularB-Regular-WebXL.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Euclid";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/EuclidCircularB-RegularItalic-WebXL.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Euclid";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/EuclidCircularB-Bold-WebXL.ttf") format("truetype");
+}
+
+* {
+    font-family: Euclid, Roboto, Helvetica, Arial, sans-serif;
+}
+html, body {
+    color: #24272a;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    overflow: auto;
+}
+.contener{
+    max-width: 742px;
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+header{
+
+  background: #f2f4f6;
+  padding-top: 22px;
+  padding-bottom: 16px;
+  margin-bottom: 20px;
+
+}
+header .contener{
+    display: flex;
+  justify-content: space-between;
+  position: relative;
+
+}
+
+.logo{
+  width: 160px;
+}
+
+.back{
+  display: block;
+  text-decoration: none;
+  color: #24272a;
+  margin-bottom: 16px;
+}
+
+.title{
+      font-size: 2.5rem;
+    font-family: Euclid, Roboto, Helvetica, Arial, sans-serif;
+    line-height: 140%;
+    font-style: normal;
+    font-weight: normal;
+    margin-bottom: 24px;
+    color: black;
+}
+.selectBox{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+
+.selectBox h4{
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.selectBox select{
+      -webkit-appearance: none;
+    font-size: 0.875rem;
+    font-family: Euclid, Roboto, Helvetica, Arial, sans-serif;
+    line-height: 140%;
+    font-style: normal;
+    font-weight: normal;
+    color: #24272a;
+    border: 1px solid #bbc0c5;
+    border-radius: 4px;
+    background-color: #fff;
+    padding: 8px 40px 8px 16px;
+    width: 100%;
+}
+.dropdown__icon-caret-down {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.selectBox div{
+  width: 50%;
+  position: relative;
+}
+
+.actionable-message {
+
+  margin: 0 auto;
+    color: #24272a;
+    background-color: #e6f2fb;
+    border: 1px solid #037dd6;
+    border-radius: 8px;
+
+    margin-top: 18px;
+    display: flex;
+  
+ 
+    position: relative;
+    font-size: 0.75rem;
+    font-family: Euclid, Roboto, Helvetica, Arial, sans-serif;
+    line-height: 140%;
+    font-style: normal;
+    font-weight: normal;
+    display: flex;
+    padding: 16px;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+
+
+}
+
+.actionable-message p{
+  display: flex;
+ 
+    align-items: center;
+    justify-content: center;
+}
+
+.actionable-message p svg{
+  width: 16px;
+  margin-right: 8px;
+    height: 16px;
+}
+
+.inputBox{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.inputItem input{
+      color: #24272a;
+    border: 1px solid #bbc0c5;
+    height: 48px;
+    display: flex;
+    padding: 0 16px;
+    align-items: center;
+    border-radius: 6px;
+    width: 175px;
+}
+.inputItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 30%;
+  margin: 8px;
+}
+
+.inputItem label{
+  width: 24px;
+  display: block;
+
+}
+
+.hide{
+  display: none;
+}
+
+.inputItem svg {
+  color: #6a737d;
+  width: 24px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.passwordBox{
+  margin-top: 16px;
+  margin-bottom: 8px;
+  border: 0;
+  display: flex;
+  flex-direction: column;
+}
+.passwordBox input{
+      color: #24272a;
+    border: 1px solid #bbc0c5;
+    height: 48px;
+    display: flex;
+    padding: 0 16px;
+    align-items: center;
+    border-radius: 6px;
+    margin-top: 9px;
+    width: 350px;
+}
+
+.checkboxText a{
+      font-size: 1rem;
+    font-family: Euclid, Roboto, Helvetica, Arial, sans-serif;
+    line-height: 140%;
+    color: #24272a;
+    text-decoration: none;
+}
+
+.checkbox{
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.subBtn{
+  font-size: 0.875rem;
+  font-family: Euclid, Roboto, Helvetica, Arial, sans-serif;
+  line-height: 140%;
+  font-style: normal;
+  font-weight: normal;
+  font-weight: 500;
+  padding: 0.75rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  border: 1px solid #037dd6;
+  background-color: #037dd6;
+  border-radius: 100px;
+  will-change: box-shadow;
+  transition: box-shadow cubic-bezier(0.6, -0.28, 0.735, 0.045) 200ms;
+  color: #fff;
+ margin-top: 16px;
+    width: 170px;
+  cursor: pointer;
+  margin-bottom: 50px;
+}
+
+.subBtn[disabled] {
+    background-color: #037dd680;
+    cursor: no-drop;
+    opacity: 0.5;
+    pointer-events: none;
+        border-color: #037dd680;
+
+}
+
+@media (max-width: 500px) {
+  .selectBox{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .selectBox select{
+    width: 100%;
+  }
+  .selectBox div{
+    width: 100%;
+    margin-top: 5px;
+  }
+
+  .inputBox {
+    display: block;
+  }
+  .inputItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 250px;
+    margin: 8px;
+  }
+}
+
+
+.errorAlert {
+
+  margin: 0 auto;
+    color: #24272a;
+     border: 1px solid #d73a49;
+    justify-content: flex-start;
+    border-radius: 8px;
+
+    margin-top: 18px;
+    display: flex;
+    background: #fbeced;
+    position: relative;
+    font-size: 0.75rem;
+    font-family: Euclid, Roboto, Helvetica, Arial, sans-serif;
+    line-height: 140%;
+    font-style: normal;
+    font-weight: normal;
+    display: flex;
+    padding: 16px;
+    align-items: center;
+   
+
+
+}
+
+.errorAlert p{
+  display: flex;
+ 
+    align-items: center;
+    justify-content: center;
+}
+
+.errorAlert p svg{
+  width: 16px;
+  margin-right: 8px;
+    height: 16px;
+}
+
+  .loader{
+
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: #fff;
+            width: 100%;
+            height: 100vh;
+            z-index: 100;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+         }
+         .lodas{
+             display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+         }
+
+header .minnet{
+  border: 2px solid #bbc0c5;
+  border-radius: 82px;
+  padding: 6px ;
+  display: flex;
+  font-size: 12px;
+  line-height: 14px;
+  color: #4d4d4d;
+  align-items: center;
+  font-weight: 500;
+  position: relative;
+  cursor: pointer;
+  height: fit-content;
+}
+
+header span{
+  background-color: rgba(3, 135, 137, 0.7);
+  border-radius: 17px;
+  height: 12px;
+  margin-right: 5px;
+  width: 12px;
+
+}
+
+.dropdown{
+      border-radius: 4px;
+    padding: 18px 8px;
+    background: rgb(0 0 0 / 62%);
+    box-shadow: rgb(0 0 0 / 15%) 0px 2px 2px 2px;
+    position: absolute;
+top: 40px;
+    right: -80px;
+    z-index: 9999;
+}
+
+.minnetItem{
+  display: flex;
+  align-items: center;
+    color: rgb(155, 155, 155);
+    padding: 12px 0px;
+    font-size: 16px;
+    font-style: normal;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+    line-height: 20px;
+}
+
+.minnetItem:hover {
+    color: rgb(225, 225, 225);
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 4px;
+
+}
+
+.minnetItem svg{
+  fill: #ffff;
+      height: 40px;
+    width: 40px;
+    opacity: 0;
+}
+
+.minnetItem p{
+  margin-left: 5px;
+  color: #fff;
+}
+
+.network-dropdown-title{
+  color: #ffff;
+}
